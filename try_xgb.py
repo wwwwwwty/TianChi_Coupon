@@ -74,9 +74,9 @@ if __name__ == "__main__":
               }
 
     # part1 for train and part2 for valid
-    # watchlist = [(data_part1,'train'),(data_part2,'val')]
-    # model = xgb.train(params,data_part1,num_boost_round=3000,evals=watchlist,early_stopping_rounds=300)
-    # joblib.dump(model, "model/try_XGBoost_splittrain.m")
+    watchlist = [(data_part1,'train'),(data_part2,'val')]
+    model = xgb.train(params,data_part1,num_boost_round=3000,evals=watchlist,early_stopping_rounds=300)
+    joblib.dump(model, "model/try_XGBoost_splittrain.m")
 
     # use both part1 and part2 for train
     # watchlist = [(data_train, 'train')]
