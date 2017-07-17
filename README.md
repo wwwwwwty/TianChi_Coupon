@@ -8,8 +8,9 @@
 - result目录: 保存训练结果csv文件。
 
 - try_feature.py: 提取数据特征，将数据分割为训练集，验证集和测试集。
+- try_traning.py: 使用Logistic Regression，RandomForest，SVM模型训练。
 - try_xgb.py: 使用xgboost模型训练。
-- try_lightgbm.py: 使用lightgbm模型训练数据
+- try_lightgbm.py: 使用lightgbm模型训练。
 
 ## 特征提取
 
